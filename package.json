@@ -5,14 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"parcel ./index.html",
-    "build":"rimraf dist && parcel build ./index.html --public-url ./new_test",
-    "deploy":"gh-pages -d dist"
+    "start": "parcel ./index.html",
+    "build": "rimraf dist && parcel build ./index.html --public-url ./new_test",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Me",
   "license": "ISC",
   "devDependencies": {
+    "css": "^2.2.4",
     "gh-pages": "^2.0.1",
     "parcel": "^1.12.3"
+  },
+  "dependencies": {
+    "sass": "^1.21.0"
   }
 }
